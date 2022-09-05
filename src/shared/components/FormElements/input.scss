@@ -1,0 +1,74 @@
+.radio_wrapper {
+  width: 184px;
+  display: flex;
+  align-items: center;
+
+  input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #4d9ac3;
+    border: 2px solid #4d9ac3;
+    border-radius: 50%;
+    outline: none;
+  }
+
+  label {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+    margin-left: 18px;
+  }
+}
+
+.input_default {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  input {
+    outline: none;
+    border: 1.8px solid var(--input-border);
+    border-radius: 8px;
+    margin-top: 8px;
+    height: 60px;
+    padding-left: 16px;
+    font-size: 16px;
+
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    &:focus {
+      font-size: 16px;
+      font-weight: 400;
+      &::placeholder {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .gel__icon {
+    position: absolute;
+    width: 18px;
+    height: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+  }
+
+  label {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  span {
+    color: var(--light-gray);
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,109 @@
+.new_container {
+  background-color: var(--bg-col);
+  .mobile_container {
+    @media (max-width: 390px) {
+      display: flex;
+      padding-top: 31px;
+      background-color: var(--bg-col);
+    }
+
+    .title_container {
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: 390px) {
+        height: 42px;
+      }
+
+      .title {
+        @media (max-width: 390px) {
+          display: none;
+        }
+
+        width: 579px;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24.42px;
+          color: #232323;
+        }
+
+        .active {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &::after {
+            content: "";
+            display: block;
+            margin-top: 15px;
+            border-bottom: 2px solid var(--black);
+            width: 185px;
+          }
+        }
+      }
+    }
+
+    .mobile_title {
+      display: none;
+
+      @media (max-width: 390px) {
+        margin-left: 49.79px;
+        width: 231px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h3 {
+        @media (max-width: 390px) {
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+
+      span {
+        @media (max-width: 390px) {
+          font-weight: 400;
+          font-size: 14px;
+          color: #898989;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .add_item__form {
+    .emp__container {
+      display: flex;
+      margin-top: 27px;
+      justify-content: center;
+
+      @media (max-width: 390px) {
+        margin-top: 0;
+      }
+    }
+
+    .d-none {
+      display: none;
+    }
+  }
+
+  .logo {
+    @media (max-width: 390px) {
+      display: none;
+    }
+    display: flex;
+    justify-content: center;
+
+    img {
+      margin-top: 67px;
+      margin-bottom: 45px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.prev_container {
+  padding-top: 53px;
+
+  @media (max-width: 390px) {
+    padding-top: 0;
+    height: 16px;
+    margin-top: 4px;
+  }
+  .prev_page {
+    width: 53px;
+    height: 53px;
+    background-color: var(--vector-bgcol);
+    border-radius: 50%;
+    margin-left: 70px;
+    cursor: pointer;
+
+    @media (max-width: 390px) {
+      background-color: unset;
+      width: 9.21px;
+      height: 16px;
+      margin-left: 20px;
+    }
+
+    img {
+      margin-left: 20px;
+      margin-top: 19px;
+
+      @media (max-width: 390px) {
+        margin: 0;
+      }
+    }
+  }
+}

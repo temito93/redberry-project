@@ -1,0 +1,10 @@
+.button {
+  background-color: var(--btn-col);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background-color: #1a5dab;
+  }
+}

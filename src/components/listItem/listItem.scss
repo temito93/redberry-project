@@ -1,0 +1,79 @@
+.list_item_container {
+  width: 563px;
+  height: 205px;
+  background-color: var(--list-bg);
+  border-radius: 20px;
+  border: 1px solid var(--list-bg);
+  display: flex;
+  align-items: center;
+  margin-bottom: 55px;
+
+  @media (max-width: 390px) {
+    width: 358px;
+    height: 123px;
+    margin-bottom: 26px;
+    border-radius: 10px;
+  }
+
+  .list_item_wrapper {
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 390px) {
+      margin-left: 7px;
+    }
+
+    img {
+      width: 266px;
+      height: 178px;
+      border-radius: 10px;
+
+      @media (max-width: 390px) {
+        width: 164px;
+        height: 109px;
+      }
+    }
+    .list_item_info {
+      margin-left: 28px;
+
+      @media (max-width: 390px) {
+        margin-left: 16px;
+      }
+
+      .list_person__name {
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--light-gray);
+
+        @media (max-width: 390px) {
+          font-size: 14px;
+        }
+      }
+      .list_pc__name {
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 18px;
+        color: var(--light-gray);
+
+        @media (max-width: 390px) {
+          margin-top: 8px;
+        }
+      }
+      .list_more {
+        cursor: pointer;
+        margin-top: 40px;
+
+        @media (max-width: 390px) {
+          margin-top: 11px;
+        }
+        a {
+          font-weight: 400;
+          font-size: 16px;
+          color: var(--dark-blue);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
